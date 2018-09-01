@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_dev_tracker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?android:selectableItemBackground"
+        app:cardCornerRadius="4dp"
+        android:elevation="@dimen/card_elevation"
+        android:translationZ="@dimen/card_press_translation_z"
+        android:stateListAnimator="@animator/card_state_anim"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:focusable="true">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_dev_tracker_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/iv_avatar"
+                tools:text="Title" />
+
+            <TextView
+                android:id="@+id/tv_dev_tracker_post_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_dev_tracker_title"
+                app:layout_constraintStart_toStartOf="@id/tv_dev_tracker_title"
+                tools:text="Posted by: Naoki_Yoshida"/>
+
+            <TextView
+                android:id="@+id/tv_dev_tracker_post_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="13sp"
+                android:textColor="@color/secondary_text"
+                app:layout_constraintStart_toStartOf="@+id/tv_dev_tracker_title"
+                app:layout_constraintEnd_toEndOf="@+id/tv_dev_tracker_title"
+                app:layout_constraintTop_toBottomOf="@+id/tv_dev_tracker_post_username"
+                tools:text="Post Time: 02 May 2018" />
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/avatar_content_description"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_dev_tracker_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="15sp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tv_dev_tracker_title"
+                app:layout_constraintTop_toBottomOf="@+id/tv_dev_tracker_post_time"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="Lorem ipsum dolor sit amet, in purto efficiendi per, aperiri habemus ne sed, sed id dicat facilisis principes. Et cibo perpetua pro, mollis lobortis periculis eu qui, qui et feugait gloriatur. Eos at expetenda urbanitas conclusionemque, has dolor quidam cotidieque an, qui ne mucius tractatos comprehensam. Sed at commodo deserunt. Te vis iuvaret honestatis. Ad percipit maluisset abhorreant sed, per et virtute insolens scriptorem." />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</layout>

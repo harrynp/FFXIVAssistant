@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/cl_character_viewer_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/fl_character_viewer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.github.harrynp.ffxivassistant.utils.NestedWebView
+                android:id="@+id/wv_character_viewer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ProgressBar
+                android:id="@+id/pb_character_viewer_loading_indicator"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                android:theme="@style/LinearProgress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_character_viewer_error_message_display"
+                android:textSize="22sp"
+                android:padding="16dp"
+                android:text="@string/character_viewer_error_message"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+        </FrameLayout>
+
+        <com.github.harrynp.ffxivassistant.utils.CheckableFloatingActionButton
+            android:id="@+id/fab_character_viewer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:checked="false"
+            android:src="@drawable/favorite_icon"
+            android:tint="@android:color/white"
+            android:stateListAnimator="@animator/scale"
+            app:layout_behavior="com.github.harrynp.ffxivassistant.utils.ScrollAwareFABBehavior"/>
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

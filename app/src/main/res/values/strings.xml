@@ -1,0 +1,40 @@
+<resources>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_news_title">News</string>
+    <string name="nav_dev_tracker_title">Dev Tracker</string>
+    <string name="nav_profile_title">Profile</string>
+
+    <!-- ImageView ContentDescription -->
+    <string name="avatar_content_description">Avatar</string>
+    <string name="banner_content_description">Banner</string>
+
+    <!-- News Tabs -->
+    <string name="tab_text_topics">Topics</string>
+    <string name="tab_text_notices">Notices</string>
+    <string name="tab_text_maintenance">Maint.</string>
+    <string name="tab_text_status">Status</string>
+
+    <!-- Error Messages -->
+    <string name="results_error_message">Failed to get results, please try again.</string>
+    <string name="character_viewer_error_message">Failed to get character, please try again.</string>
+
+    <!-- Character Search Form -->
+    <string name="character_search_title">Character Search</string>
+    <string name="hint_name">Character Name</string>
+    <string name="name_empty_error">You need to enter a name</string>
+    <string name="hint_server">Server</string>
+    <string name="search_button">Search</string>
+    <string name="title_activity_character_search_results">Character Search Results</string>
+    <string name="no_results_found_error">No results found.</string>
+    <string name="no_characters_saved_error">No characters saved.</string>
+
+    <!-- Widget -->
+    <string name="title_configure_widget">Configure News Widget</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_character_viewer">Character Viewer</string>
+
+    <string name="favorited_characters_title">Favorites</string>
+</resources>
